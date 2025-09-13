@@ -1,37 +1,105 @@
-/* Basic */
+/* ---------- Base Styles ---------- */
 body {
-    background-color: #f4f4f4;
-    font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #f9f9f9, #f1f5ff);
+  font-family: 'Poppins', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
 }
 
 p {
     color: black;
     line-height: 1.5;
 }
-
-a {
-    color: #000;
-    text-decoration: none;
+/* ---------- Navigation ---------- */
+nav {
+  background: linear-gradient(90deg, #ff6f61, #295aa2);
+  padding: 15px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-a:hover {
-    color: red;
+nav a {
+  color: white;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
-/* Headings */
-h1 {
+nav a:hover {
+  color: #222;
+}
+/* ---------- Hero Section ---------- */
+header {
+  background: url("https://images.unsplash.com/photo-1617625804361-6f474ed2467b?auto=format&fit=crop&w=1350&q=80") center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  border-bottom: 5px solid #6160c7;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
     color: #003366;
     text-align: center;
 }
 
 h2 {
-    color: darkgreen;
+    font-size: 1.5rem;
+    color: rgb(3, 44, 3);
     margin-bottom: 10px;
     text-align: center; 
 }
 
-h3 {
+.cta-btn {
+  background: #ff6f61;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.cta-btn:hover {
+  background: #ff3b2e;
+  transform: scale(1.05);
+}
+
+.product -card h3 {
+    margin: 10px 0;
+    color: ff6f61;
     font-style: italic;
+}
+
+button {
+  background: #ff6f61;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+button:hover {
+  background: #ff3b2e;
+  transform: scale(1.05);
+}
+/* ---------- About Section ---------- */
+.about {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.about h2 {
+  font-size: 2rem;
+  color: #003366;
 }
 
 /* Lists */
@@ -49,11 +117,12 @@ img {
     border-radius: 5px;
     display: block;
     margin: 10px auto;
+    object-fit: cover;
 }
 
 main img {
     width: 200px;
-    height: 220px;
+    height: 250px;
 }
 
 footer img {
