@@ -1,0 +1,142 @@
+/* Basic */
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+p {
+    color: black;
+    line-height: 1.5;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+
+/* Headings */
+h1 {
+    color: #003366;
+    text-align: center;
+}
+
+h2 {
+    color: darkgreen;
+    margin-bottom: 10px;
+    text-align: center; 
+}
+
+h3 {
+    font-style: italic;
+}
+
+/* Lists */
+ul, ol {
+    border: 1px solid #ccc;
+}
+
+li {
+    padding: 5px;
+}
+
+/* Images */
+img {
+    border: 1px solid black;
+    border-radius: 5px;
+    display: block;
+    margin: 10px auto;
+}
+
+main img {
+    width: 200px;
+    height: 220px;
+}
+
+footer img {
+    width: 50px;
+    height: auto;
+}
+
+/* Navigation */
+nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: darkblue;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Layout */
+footer {
+    background-color: #222;
+    color: #ddd;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Custom Styles */
+.product-card {
+    background: white;
+    box-shadow: 0px 0px 5px gray;
+    padding: 20px;
+    margin: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.highlight {
+    color: yellow;
+    font-weight: bold;
+}
+
+/* Extra */
+a:visited {
+    color: purple;
+}
+
+@media screen and (max-width: 600px) {
+    h1, h2, h3 {
+        font-size: smaller;
+    }
+
+    .product-section {
+        flex-direction: column;
+    }
+}
+
+/* Flexbox Layout */
+main .product-section {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Container */
+body > main {
+    max-width: 900px;
+    margin: auto;
+}
